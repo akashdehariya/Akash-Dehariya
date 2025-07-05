@@ -9,6 +9,19 @@
 </head>
 
 <body>
+    <!-- 🔊 Background Music -->
+    <audio id="bg-music" autoplay loop muted>
+        <source src="https://raw.githubusercontent.com/akashdehariya/Song.mpeg/main/Deewana.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        window.addEventListener("click", function () {
+            const music = document.getElementById("bg-music");
+            music.muted = false;
+            music.play();
+        });
+    </script>
+
     <!-- *************************Navbar************************* -->
     <header class="header">
         <a href="#" class="logo">Akash Dehariya</a>
@@ -125,4 +138,4 @@
 
     <script src="script.js"></script>
 </body>
-                                                                      </html>
+        </html>
